@@ -39,7 +39,7 @@ $(function(){
 		// 2.获取当前点击的一级分类的ID
 		var id = $(this).attr('data-id');
 
-		// 给当前点击的一级分类添加选中状态
+		// 给当前点击的一级分类添加选中状态 排他算法		
 		$(this).addClass('active').siblings().removeClass('active');
 
 		// 3.调用接口 获取数据
