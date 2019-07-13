@@ -67,7 +67,10 @@ $(function(){
 	*/
 	
 	$('#clearBtn').on('click',function(){
+		//清空数组
+		keyArr = [];
 
+		//清空html
 		$('#history-box').html("");
 
 		localStorage.removeItem("keyArr");
