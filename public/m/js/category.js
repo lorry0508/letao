@@ -20,14 +20,16 @@ $(function(){
 			// 如果一级分类有数据的话
 			if(response.rows.length){
 
-				// 给第一个一级分类添加选中状态
-				$('#links').find('a').eq(0).addClass('active')
+				// // 给第一个一级分类添加选中状态
+				// $('#links').find('a').eq(0).addClass('active')
 
-				// 获取第一个一级分类的ID
-				var id = response.rows[0].id;
+				// // 获取第一个一级分类的ID
+				// var id = response.rows[0].id;
 
-				// 根据一级分类ID获取二级分类
-				getSecondCategory(id);
+				// // 根据一级分类ID获取二级分类
+				// getSecondCategory(id);
+
+				$('#links').find('a').eq(0).addClass('active').click()
 			}
 
 		}
